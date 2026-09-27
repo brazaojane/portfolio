@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janete — Design & Desenvolvimento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora-bg" aria-hidden="true">
+  <div class="grid-overlay"></div>
+</div>
+
+<header class="nav">
+  <span class="nav__mark">JB</span>
+  <nav class="nav__links">
+    <a href="#sobre">Sobre</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#stack">Stack</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p class="hero__eyebrow">Manaus, Amazonas</p>
+    <h1 class="hero__title">Janete transforma ideias<br>em interfaces e interfaces <italic>em código.</italic> </h1>
+    <p class="hero__subtitle">UI/UX designer e desenvolvedora full-stack, construindo produtos do wireframe ao deploy.</p>
+    <a href="#trabalhos" class="hero__cta">Ver trabalhos</a>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2 class="section-title">Sobre</h2>
+    <div class="sobre__grid">
+      <p class="sobre__text">
+        Comecei no design gráfico, como arte-finalista, e fui atravessando a linha que
+        separava uma tela bonita de uma tela que funciona. Hoje curso Análise e
+        Desenvolvimento de Sistemas e atuo como estagiária de TI, onde transito entre
+        manutenção de sites, sistemas internos e suporte de infraestrutura. O design me
+        ensinou a olhar para a intenção por trás de cada elemento; o desenvolvimento me
+        ensinou a fazer essa intenção existir de verdade.
+      </p>
+      <ul class="sobre__facts">
+        <li><span>Formação</span>Análise e Desenvolvimento de Sistemas</li>
+        <li><span>Atuação</span>Estágio em TI — sites, sistemas e infraestrutura</li>
+        <li><span>Origem</span>Design gráfico e arte finalização</li>
+        <li><span>Hoje</span>Design de interfaces + desenvolvimento full-stack</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="trabalhos" class="trabalhos">
+    <div class="trabalhos__head">
+      <h2 class="section-title">Trabalhos</h2>
+      <div class="filtros" role="tablist" aria-label="Filtrar trabalhos">
+        <button class="filtro is-active" data-filter="all">Tudo</button>
+        <button class="filtro" data-filter="design">Design</button>
+        <button class="filtro" data-filter="dev">Desenvolvimento</button>
+      </div>
+    </div>
+
+    <div class="grid" id="projectGrid">
+
+      <article class="card" data-cat="design">
+        <div class="card__image" style="--from:#B98EFF; --to:#4B2E83;">
+          <!-- troque por: <img src="imagens/aurora-poster.jpg" alt="Pôster do Festival Aurora"> -->
+        </div>
+        <div class="card__body">
+          <h3>Festival Aurora — PERSPECTIVA</h3>
+          <p>Identidade visual e peças impressas do evento: pôster e ingresso, produzidos no Illustrator.</p>
+          <div class="tags"><span>Identidade visual</span><span>Illustrator</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="dev">
+        <div class="card__image" style="--from:#4CFFB3; --to:#15111F;">
+        </div>
+        <div class="card__body">
+          <h3>Geqode</h3>
+          <p>Gerador de QR code e código de barras com interface web em Flask, do backend à UI.</p>
+          <div class="tags"><span>Python</span><span>Flask</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="design">
+        <div class="card__image" style="--from:#6C3CE9; --to:#0A0812;">
+        </div>
+        <div class="card__body">
+          <h3>CAA para escolas</h3>
+          <p>Protótipo de app de comunicação aumentativa e alternativa para o ambiente escolar, mockup no Figma.</p>
+          <div class="tags"><span>UX</span><span>Figma</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="dev">
+        <div class="card__image" style="--from:#B98EFF; --to:#3DDC97;">
+        </div>
+        <div class="card__body">
+          <h3>ClubeVG — Internos</h3>
+          <p>App interno de premiação da empresa, com React no front e Firebase como backend.</p>
+          <div class="tags"><span>React</span><span>Firebase</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="design">
+        <div class="card__image" style="--from:#FF9ED2; --to:#4B2E83;">
+        </div>
+        <div class="card__body">
+          <h3>Reviu</h3>
+          <p>Identidade visual de um app pessoal para microcríticas de livros, filmes e jogos.</p>
+          <div class="tags"><span>Identidade visual</span><span>Flutter</span></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="dev">
+        <div class="card__image" style="--from:#4CFFB3; --to:#6C3CE9;">
+        </div>
+        <div class="card__body">
+          <h3>Relatório de Serviço VG</h3>
+          <p>Formulário que gera um PDF de relatório técnico e envia por e-mail automaticamente via SMTP.</p>
+          <div class="tags"><span>Node.js</span><span>PDF</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="stack" class="stack">
+    <h2 class="section-title">Stack</h2>
+    <div class="stack__grid">
+      <div class="stack__col">
+        <h3>Design</h3>
+        <ul>
+          <li>Figma</li>
+          <li>Adobe Illustrator</li>
+          <li>Penpot</li>
+          <li>Prototipagem e UX</li>
+        </ul>
+      </div>
+      <div class="stack__col">
+        <h3>Desenvolvimento</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Python, PHP, C/C++</li>
+          <li>SQL, Firebird</li>
+          <li>React, Firebase, Git</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2 class="section-title">Contato</h2>
+    <p class="contato__text">Tem um projeto de design, um sistema pra construir, ou os dois? Me chama.</p>
+    <form class="contato__form" id="contactForm">
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+      <button type="submit">Enviar mensagem</button>
+      <p class="form__status" id="formStatus" role="status"></p>
+    </form>
+    <div class="contato__links">
+      <a href="https://github.com/brazaojane" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:seuemail@exemplo.com">E-mail</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Janete — design e desenvolvimento, Manaus.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
